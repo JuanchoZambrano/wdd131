@@ -46,7 +46,7 @@ header .nav-var a {
   text-decoration: none;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: color 0.3 ease;
+  transition: color 0.3s ease;
 }
 
 .nav-var a:hover {
