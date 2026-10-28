@@ -1,10 +1,11 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -14,15 +15,20 @@ body {
   min-height: 100vh;
 }
 
-header #course-title {
-  display: block;
+header {
+  display: flex;
+  flex-direction: column;
   background-color: #000;
   color: white;
+  width: 100%;
+}
+
+header #course-title {
+  display: block;
   text-align: center;
   font-weight: 400;
   font-size: 1.3rem;
-  padding-top: 30px;
-  height: 60px;
+  padding: 20px 0;
   width: 100%;
 }
 
@@ -30,6 +36,8 @@ header .nav-var {
   display: flex;
   background-color: #22396f;
   justify-content: space-between;
+  margin-top: 10px;
+  gap: 20px;
   padding: 15px 100px;
 }
 
@@ -38,6 +46,11 @@ header .nav-var a {
   text-decoration: none;
   font-size: 1.2rem;
   cursor: pointer;
+  transition: color 0.3 ease;
+}
+
+.nav-var a:hover {
+  color: #38bdf8;
 }
 
 main {
@@ -46,7 +59,7 @@ main {
   gap: 15px;
   max-width: 1200px;
   margin: 0 auto;
-  flex: 1; 
+  flex: 1;
 }
 
 main h1 {
@@ -87,7 +100,8 @@ main .card-1 .profile-content {
   margin: 10px 200px 10px 10px;
 }
 
-main .card-1 .profile-content p, .card-1 .country-info p {
+main .card-1 .profile-content p,
+.card-1 .country-info p {
   line-height: 1.6;
 }
 
@@ -95,7 +109,7 @@ main .card-1 .profile-pic {
   position: absolute;
   right: 20px;
   top: 70px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 main .country-info {
@@ -141,6 +155,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;         
+  padding: 20px 0;
   width: 100%;
 }
