@@ -1,0 +1,22 @@
+@media screen and (min-width: 500px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Al llegar o superar los 800px de ancho: pasamos a 3 columnas */
+@media screen and (min-width: 800px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #menu {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: inherit;
+        justify-self: end;
+        justify-content: right;
+    }
+}
