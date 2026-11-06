@@ -99,7 +99,7 @@ footer {
 
 }
 
-#menu {
+#menu-button {
     display: block;
     justify-self: end;
     background: none;
@@ -111,14 +111,10 @@ footer {
     right: 1rem;
 }
 
-menu.show {
-    transform: rotate(90deg);
-}
-
-#menu::before {
+#menu-button::before {
     content: '≡';
 }
 
-#menu.show::before {
+#menu-button.show::before {
     content: 'X';
 }
