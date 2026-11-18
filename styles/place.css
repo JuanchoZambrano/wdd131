@@ -1,0 +1,185 @@
+:root {
+  --font-primary: "Karla", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  --main-color: #0066cc;
+  --secondary-color: #da291c;
+  --third-color: #0277bd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  width: 100%;
+  background-color: var(--main-color);
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.2rem;
+}
+
+.lightblue-line {
+  width: 100%;
+  height: 15px;
+  background-color: var(--third-color);
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+}
+
+.hero {
+  background-color: var(--main-color);
+}
+
+.hero picture img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.card h2 {
+  margin-bottom: 30px;
+}
+
+.card-list {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-primary);
+}
+
+.card-list li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.card-list .label {
+  font-weight: bold;
+  text-align: right;
+}
+
+.card-list .value {
+  text-align: left;
+}
+
+.weather-card-header .weather-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+footer {
+  font-family: var(--font-primary);
+  color: #fff;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 701px) {
+  .hero {
+    position: relative;
+  }
+
+  .card {
+    max-width: 280px;
+    position: absolute;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.85
+    );
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 3.5rem 1rem 1rem 1rem; 
+  }
+
+  .data-card {
+    left: 20px;
+    top: 40px;
+  }
+
+  .weather-card {
+    right: 20px;
+    bottom: 40px;
+  }
+
+  .data-card .card-header,
+  .weather-card-header {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    right: 25px;
+    background-color: var(--third-color);
+    padding: 10px 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .card h2 {
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .weather-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .weather-card h2::after {
+    content: " ⛅";
+    font-size: 1.2rem;
+  }
+
+  .weather-icon {
+    display: none;
+  }
+
+  .card-list {
+    margin-top: 1.5rem;
+  }
+
+  .card-list li {
+    gap: 6px;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+  }
+
+  .card-list .label {
+    font-weight: 700;
+    text-align: right;
+  }
+
+  .card-list .value {
+    text-align: left;
+  }
+}
