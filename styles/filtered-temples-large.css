@@ -1,0 +1,21 @@
+@media screen and (min-width: 500px) {
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #menu-button {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: inherit;
+        justify-self: end;
+        justify-content: right;
+    }
+}

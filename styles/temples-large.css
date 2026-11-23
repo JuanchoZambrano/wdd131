@@ -4,7 +4,6 @@
     }
 }
 
-/* Al llegar o superar los 800px de ancho: pasamos a 3 columnas */
 @media screen and (min-width: 800px) {
     main {
         grid-template-columns: repeat(3, 1fr);
