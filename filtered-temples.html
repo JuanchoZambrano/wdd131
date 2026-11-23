@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temples | WDD 131</title>
+
+    <meta name="description" content="A page about temples in the WDD 131 course using responsive design.">
+    <meta name="author" content="Juan David Zambrano Rengifo">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <p>Temple Album</p>
+        <button id="menu-button" aria-label="Open Navigation Menu"></button>
+        <nav class="navigation">
+            <a href="#" id="home" class="active">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+    <h1>Home</h1>
+    <main>
+        <div id="temples-container" class="temple-grid"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ⚽️ Juan David Zambrano Rengifo ⚽️ Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
